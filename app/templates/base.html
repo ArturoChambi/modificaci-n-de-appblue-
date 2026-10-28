@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi App{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <a href="/admin/panel">Admin</a> | 
+            <a href="/blog/entrada/1">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Aquí se inyectará el contenido de las otras páginas -->
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
